@@ -17,6 +17,7 @@ for (let i=1; i<=16; i++) {
     container.appendChild(div);
 }
 }
+document.re
 //grab all divs
 let squares=document.querySelectorAll(".square");
 //change color on mouseover div
@@ -36,6 +37,11 @@ let numSquares=prompt("How many squares per side?");
 squares.forEach((square)=>{
     square.style.backgroundColor="white";
 })
+//remove existing grid
+let element = document.querySelector(".container");
+while (element.firstChild) {
+  element.removeChild(element.firstChild);
+}
 //print grid
 
 for (let i=1; i<=numSquares; i++) {
