@@ -8,3 +8,4 @@ change color on hover over div
 keep color change after leaving div
 
 add button which prompts for how many squares per side to create a new grid
+square width is ((800/number of squares per side)-2)px
