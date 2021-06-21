@@ -1,0 +1,9 @@
+grab container div with variable
+create loop: initializer=0,condition less than 16,increment
+create div
+append to container div
+
+change color on hover over div
+keep color change after leaving div
+
+add button which prompts for how many squares per side to create a new grid
