@@ -17,7 +17,6 @@ for (let i=1; i<=16; i++) {
     container.appendChild(div);
 }
 }
-document.re
 //grab all divs
 let squares=document.querySelectorAll(".square");
 //change color on mouseover div
@@ -59,5 +58,13 @@ for (let i=1; i<=numSquares; i++) {
     container.appendChild(div);
 }
 }
+//grab all divs
+let squares2=document.querySelectorAll(".square");
+//change background color on mouseover
+squares2.forEach((square) => {
+    square.addEventListener('mouseover',()=>{
+square.style.backgroundColor="black"
+    })
+})
 
 })
