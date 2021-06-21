@@ -3,3 +3,10 @@
     /* flex-direction: row; */
     flex-wrap: wrap;
 }
+.border {
+    background-color: brown;
+    width: 900px;
+}
+.screen {
+    
+}
