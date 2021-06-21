@@ -13,7 +13,7 @@ for (let i=1; i<=16; i++) {
 }
 let squares=document.querySelectorAll(".square");
 squares.forEach((square) => {
-    square.addEventListener('click',()=>{
+    square.addEventListener('mouseover',()=>{
 square.style.backgroundColor="black"
     })
 })
