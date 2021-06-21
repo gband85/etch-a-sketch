@@ -36,10 +36,6 @@ let reset=document.querySelector('.reset');
 reset.addEventListener('click',()=>{
 //prompt for squares per side
 let numSquares=prompt("How many squares per side?");
-//clear background color
-squares.forEach((square)=>{
-    square.style.backgroundColor="white";
-})
 //remove existing grid
 let element = document.querySelector(".screen");
 while (element.firstChild) {
