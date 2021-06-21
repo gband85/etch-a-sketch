@@ -2,22 +2,25 @@
 let container = document.querySelector(".container");
 let screen = document.querySelector(".screen")
 // container.style.width="800px";
+function printGrid(numberOfSquares) {
 //create outer loop for rows: initializer=0,condition less than 16,increment
-for (let i=1; i<=16; i++) {
+for (let i=1; i<=numberOfSquares; i++) {
     //create inner loop for cols: initializer=0,condition less than 16,increment    
-    for (let j=1; j<=16; j++) {
+    for (let j=1; j<=numberOfSquares; j++) {
         //create div
     let div=document.createElement("div");
     //add class
     div.classList.add("square");
     //style div
-    div.style.height="48px";
-    div.style.width="48px";
+    div.style.height=`${(800/numberOfSquares)-2}px`;
+    div.style.width=`${(800/numberOfSquares)-2}px`;
     div.style.border="1px solid black";
    // append to container div
     screen.appendChild(div);
 }
 }
+}
+printGrid(16);
 //grab all divs
 let squares=document.querySelectorAll(".square");
 //change color on mouseover div
@@ -44,21 +47,7 @@ while (element.firstChild) {
 }
 //print grid
 
-for (let i=1; i<=numSquares; i++) {
-    //create inner loop for cols: initializer=0,condition less than 16,increment    
-    for (let j=1; j<=numSquares; j++) {
-        //create div
-    let div=document.createElement("div");
-    //add class
-    div.classList.add("square");
-    //style div
-    div.style.height=`${(800/numSquares)-2}px`;
-    div.style.width=`${(800/numSquares)-2}px`;
-    div.style.border="1px solid black";
-   // append to container div
-    screen.appendChild(div);
-}
-}
+printGrid(numSquares);
 //grab all divs
 let squares2=document.querySelectorAll(".square");
 //change background color on mouseover
