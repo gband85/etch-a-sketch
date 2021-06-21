@@ -38,7 +38,7 @@ squares.forEach((square)=>{
     square.style.backgroundColor="white";
 })
 //remove existing grid
-let element = document.querySelector(".container");
+let element = document.querySelector(".screen");
 while (element.firstChild) {
   element.removeChild(element.firstChild);
 }
@@ -56,7 +56,7 @@ for (let i=1; i<=numSquares; i++) {
     div.style.width=`${(800/numSquares)-2}px`;
     div.style.border="1px solid black";
    // append to container div
-    container.appendChild(div);
+    screen.appendChild(div);
 }
 }
 //grab all divs
