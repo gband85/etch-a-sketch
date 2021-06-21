@@ -25,3 +25,33 @@ squares.forEach((square) => {
 square.style.backgroundColor="black"
     })
 })
+
+//grab reset button
+let reset=document.querySelector('.reset');
+//listen for button press
+reset.addEventListener('click',()=>{
+//prompt for squares per side
+let numSquares=prompt("How many squares per side?");
+//clear background color
+squares.forEach((square)=>{
+    square.style.backgroundColor="white";
+})
+//print grid
+
+for (let i=1; i<=numSquares; i++) {
+    //create inner loop for cols: initializer=0,condition less than 16,increment    
+    for (let j=1; j<=numSquares; j++) {
+        //create div
+    let div=document.createElement("div");
+    //add class
+    div.classList.add("square");
+    //style div
+    div.style.height=`${(800/numSquares)-2}px`;
+    div.style.width=`${(800/numSquares)-2}px`;
+    div.style.border="1px solid black";
+   // append to container div
+    container.appendChild(div);
+}
+}
+
+})
