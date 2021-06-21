@@ -1,5 +1,6 @@
 grab container div with variable
-create loop: initializer=0,condition less than 16,increment
+create outer loop for rows: initializer=0,condition less than 16,increment
+create inner loop for cols: initializer=0,condition less than 16,increment
 create div
 append to container div
 
