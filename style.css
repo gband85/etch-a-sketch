@@ -2,7 +2,7 @@
     /* display: flex; */
     /* flex-direction: row; */
     /* flex-wrap: wrap; */
-    width: 900px;
+    width: 800px;
 }
 .border {
     background-color: brown;
@@ -20,5 +20,5 @@
     background-color: white;
     width: 800px;
     height: 800px;
-    border: 50px solid brown;
+    border: 50px solid #3D59A2;
 }
