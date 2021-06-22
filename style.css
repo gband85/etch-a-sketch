@@ -21,7 +21,7 @@
     background-color: white;
     width: 800px;
     height: 800px;
-    border-bottom: 50px solid #3D59A2;
+    /* border-bottom: 50px solid #3D59A2; */
     border-left: 50px solid #3D59A2;
     border-right: 50px solid #3D59A2;
 }
@@ -35,4 +35,14 @@
     border-right: 50px solid #3D59A2;
     padding-top: 11.4px;
     padding-bottom: 11.4px;
+}
+.reset {
+    padding-top: 15.5px;
+    padding-bottom: 15.5px;
+    background-color: #3D59A2;
+    width: 800px;
+    border-left: 50px solid #3D59A2;
+    border-right: 50px solid #3D59A2;
+    display: flex;
+    justify-content: center;
 }

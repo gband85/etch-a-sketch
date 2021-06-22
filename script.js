@@ -31,7 +31,7 @@ square.style.backgroundColor="black"
 })
 
 //grab reset button
-let reset=document.querySelector('.reset');
+let reset=document.querySelector('.resetBtn');
 //listen for button press
 reset.addEventListener('click',()=>{
 //prompt for squares per side
