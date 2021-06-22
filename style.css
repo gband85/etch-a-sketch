@@ -1,8 +1,9 @@
 .container {
-    /* display: flex; */
-    /* flex-direction: row; */
+    display: flex;
+    flex-direction: column;
     /* flex-wrap: wrap; */
-    width: 800px;
+    /* width: 800px; */
+    align-items: center;
 }
 .border {
     background-color: brown;
@@ -20,5 +21,18 @@
     background-color: white;
     width: 800px;
     height: 800px;
-    border: 50px solid #3D59A2;
+    border-bottom: 50px solid #3D59A2;
+    border-left: 50px solid #3D59A2;
+    border-right: 50px solid #3D59A2;
+}
+.title {
+    background-color: #3D59A2;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 800px;
+    /* height: 50px; */
+    border-left: 50px solid #3D59A2;
+    border-right: 50px solid #3D59A2;
+    padding-top: 11.4px;
+    padding-bottom: 11.4px;
 }
